@@ -1,0 +1,30 @@
+[Unit]
+Description=LRPDM Platform - Next.js Application
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/lrpdm-platform
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=10
+Environment=NODE_ENV=production
+Environment=PORT=3000
+
+# Security settings
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/www/lrpdm-platform
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=lrpdm-platform
+
+[Install]
+WantedBy=multi-user.target
