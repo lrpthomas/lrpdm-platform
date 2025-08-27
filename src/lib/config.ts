@@ -4,6 +4,9 @@ export const config = {
     shortName: "LRPDM", 
     tagline: "Everything in life is a puzzle - and the harder the puzzle, the more rewarding the solution",
     website: "https://lrpdm.com",
+    phone: "(555) 123-4567",
+    email: "crta@lrpdm.com",
+    address: "Las Vegas, Nevada",
     founder: {
       name: "Cody Ryan Thomas",
       title: "Founder & Lead Developer",
@@ -54,18 +57,92 @@ export const config = {
       {
         id: 'project-management', 
         name: 'Project Management',
-        description: 'Kanban boards and task tracking',
+        description: 'Kanban boards and task tracking for teams',
         href: '/apps/project-management',
         icon: 'CheckSquare',
-        category: 'Business'
+        category: 'Business',
+        featured: true
       },
       {
         id: 'crm',
-        name: 'CRM',
-        description: 'Customer relationship management',
+        name: 'CRM System',
+        description: 'Customer relationship management and sales tracking',
         href: '/apps/crm', 
         icon: 'Users',
+        category: 'Business',
+        featured: true
+      },
+      {
+        id: 'ai-support',
+        name: 'AI Support Center',
+        description: 'AI-powered customer support and knowledge base',
+        href: '/apps/ai-support',
+        icon: 'MessageSquare',
         category: 'Business'
+      },
+      {
+        id: 'file-share',
+        name: 'File Share Pro',
+        description: 'Secure file sharing and collaboration platform',
+        href: '/apps/file-share',
+        icon: 'Share2',
+        category: 'Business'
+      },
+      {
+        id: 'video-chat',
+        name: 'Video Conference',
+        description: 'High-quality video conferencing and screen sharing',
+        href: '/apps/video-chat',
+        icon: 'Video',
+        category: 'Business'
+      },
+      {
+        id: 'social-dashboard',
+        name: 'Social Dashboard',
+        description: 'Manage multiple social media accounts from one place',
+        href: '/apps/social-dashboard',
+        icon: 'Share',
+        category: 'Marketing'
+      },
+      {
+        id: 'analytics',
+        name: 'Business Analytics',
+        description: 'Advanced data visualization and business intelligence',
+        href: '/apps/analytics',
+        icon: 'BarChart3',
+        category: 'Analytics'
+      },
+      {
+        id: 'inventory',
+        name: 'Inventory Manager',
+        description: 'Track inventory, orders, and supply chain',
+        href: '/apps/inventory',
+        icon: 'Package',
+        category: 'Business'
+      },
+      {
+        id: 'scheduling',
+        name: 'Smart Scheduler',
+        description: 'Advanced scheduling and resource management',
+        href: '/apps/scheduling',
+        icon: 'Calendar',
+        category: 'Business'
+      },
+      {
+        id: 'ecommerce',
+        name: 'E-Commerce Suite',
+        description: 'Complete online store management platform',
+        href: '/apps/ecommerce',
+        icon: 'ShoppingCart',
+        category: 'Business'
+      },
+      {
+        id: 'accounting',
+        name: 'Accounting Pro',
+        description: 'Full-featured accounting and financial management',
+        href: '/apps/accounting',
+        icon: 'Calculator',
+        category: 'Finance'
       }
     ],
 
