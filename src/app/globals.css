@@ -45,71 +45,56 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3.9%;
+  --primary: 41 50% 53%; /* Gold #B4975A */
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 96.1%;
+  --secondary-foreground: 0 0% 9%;
+  --muted: 0 0% 96.1%;
+  --muted-foreground: 0 0% 45.1%;
+  --accent: 0 0% 96.1%;
+  --accent-foreground: 0 0% 9%;
+  --destructive: 0 84.2% 60.2%;
+  --border: 0 0% 89.8%;
+  --input: 0 0% 89.8%;
+  --ring: 41 50% 53%;
+  --chart-1: 41 50% 53%;
+  --chart-2: 0 0% 20%;
+  --chart-3: 348 83% 47%;
+  --chart-4: 43 55% 60%;
+  --chart-5: 0 0% 29%;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: 0 0% 10%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 20%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 20%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 41 50% 53%;
+  --primary-foreground: 0 0% 20%;
+  --secondary: 0 0% 29%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 29%;
+  --muted-foreground: 0 0% 70%;
+  --accent: 0 0% 29%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 348 83% 47%;
+  --border: 0 0% 29%;
+  --input: 0 0% 29%;
+  --ring: 41 50% 53%;
+  --chart-1: 41 50% 53%;
+  --chart-2: 0 0% 98%;
+  --chart-3: 348 83% 47%;
+  --chart-4: 43 68% 75%;
+  --chart-5: 0 0% 40%;
 }
 
 @layer base {
@@ -119,4 +104,183 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* VGK Color Scheme - Custom CSS Variables */
+:root {
+  --color-gold: #B4975A;
+  --color-gold-light: #D4B896;
+  --color-gold-dark: #9B8043;
+  --color-steel: #333333;
+  --color-steel-light: #4A4A4A;
+  --color-steel-dark: #1A1A1A;
+  --color-accent: #C8102E;
+}
+
+/* Custom Utility Classes */
+.bg-gold {
+  background-color: var(--color-gold);
+}
+
+.bg-gold-light {
+  background-color: var(--color-gold-light);
+}
+
+.bg-gold-dark {
+  background-color: var(--color-gold-dark);
+}
+
+.bg-steel {
+  background-color: var(--color-steel);
+}
+
+.bg-steel-50 {
+  background-color: #F5F5F5;
+}
+
+.bg-steel-100 {
+  background-color: #E8E8E8;
+}
+
+.bg-steel-200 {
+  background-color: #D1D1D1;
+}
+
+.bg-steel-300 {
+  background-color: #B3B3B3;
+}
+
+.bg-steel-400 {
+  background-color: #808080;
+}
+
+.bg-steel-500 {
+  background-color: #666666;
+}
+
+.bg-steel-600 {
+  background-color: var(--color-steel-light);
+}
+
+.bg-steel-700 {
+  background-color: var(--color-steel);
+}
+
+.bg-steel-800 {
+  background-color: #262626;
+}
+
+.bg-steel-900 {
+  background-color: var(--color-steel-dark);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-gold-light {
+  color: var(--color-gold-light);
+}
+
+.text-gold-dark {
+  color: var(--color-gold-dark);
+}
+
+.text-steel {
+  color: var(--color-steel);
+}
+
+.text-steel-100 {
+  color: #E8E8E8;
+}
+
+.text-steel-200 {
+  color: #D1D1D1;
+}
+
+.text-steel-300 {
+  color: #B3B3B3;
+}
+
+.text-steel-400 {
+  color: #808080;
+}
+
+.text-steel-500 {
+  color: #666666;
+}
+
+.text-steel-600 {
+  color: var(--color-steel-light);
+}
+
+.text-steel-700 {
+  color: var(--color-steel);
+}
+
+.text-steel-800 {
+  color: #262626;
+}
+
+.text-steel-900 {
+  color: var(--color-steel-dark);
+}
+
+.border-gold {
+  border-color: var(--color-gold);
+}
+
+.border-steel {
+  border-color: var(--color-steel);
+}
+
+.border-steel-600 {
+  border-color: var(--color-steel-light);
+}
+
+.border-steel-800 {
+  border-color: #262626;
+}
+
+.hover\:bg-gold:hover {
+  background-color: var(--color-gold);
+}
+
+.hover\:bg-gold-dark:hover {
+  background-color: var(--color-gold-dark);
+}
+
+.hover\:bg-steel-700:hover {
+  background-color: var(--color-steel);
+}
+
+.hover\:bg-steel-800:hover {
+  background-color: #262626;
+}
+
+.hover\:text-gold:hover {
+  color: var(--color-gold);
+}
+
+.hover\:border-gold:hover {
+  border-color: var(--color-gold);
+}
+
+.hover\:text-steel-900:hover {
+  color: var(--color-steel-dark);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+}
+
+.gradient-steel {
+  background: linear-gradient(135deg, var(--color-steel) 0%, var(--color-steel-light) 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
